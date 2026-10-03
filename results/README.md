@@ -12,7 +12,7 @@ One pair of files per measurement, as the instruments wrote them.
 count, duration, start and end timestamps, the environment the run executed in,
 and device occupancy before and after.
 
-`<kernel>_<host>_run<N>_power.csv` holds the power trace, one row per second,
+`<kernel><precision>_<host>_run<N>_power.csv` holds the power trace, one row per second,
 covering only the measured region. Columns differ by platform: the GPU files
 carry `power_w` per `gpu_index`, the IPU files carry `chip_w` and `chassis_w`.
 Both start with `unix_time` and `elapsed_s`.
