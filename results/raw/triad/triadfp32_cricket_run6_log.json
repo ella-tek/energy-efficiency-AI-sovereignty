@@ -1,0 +1,46 @@
+{
+  "run": 6,
+  "node": "cricket",
+  "kernel": "triad",
+  "N": 68000000,
+  "B": 1,
+  "residency": "device_resident",
+  "alpha": 2.0,
+  "gpu_name": "NVIDIA A100 80GB PCIe",
+  "warmup_calls": 10,
+  "warmup_s": 0.01,
+  "compile_time_s": 0.0,
+  "compile_in_timing": false,
+  "warmup_in_timing": false,
+  "seconds_requested": 300.0,
+  "total_time_s": 300.0005,
+  "calls": 587309,
+  "total_samples": 587309,
+  "calls_measured_on_device": 587309.0,
+  "count_verified": true,
+  "throughput_samples_per_s": 1957.6935,
+  "ms_per_sample": 0.510805,
+  "GB_per_s": 1597.4779,
+  "start_unix": 1787951212.971,
+  "end_unix": 1787951512.972,
+  "idle_w": 43.14,
+  "seed": 42,
+  "occupancy_before": {
+    "n_processes": 1,
+    "processes": [
+      "3935825, python3, 1272 MiB"
+    ]
+  },
+  "occupancy_after": {
+    "n_processes": 3,
+    "processes": [
+      "3935825, python3, 1272 MiB",
+      "3935918, python3, 61486 MiB",
+      "3935918, python3, 416 MiB"
+    ]
+  },
+  "python": "3.9.18",
+  "torch": "2.5.1",
+  "cuda": "12.4",
+  "note_power": "sampled separately; join on start_unix/end_unix or phase"
+}

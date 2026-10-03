@@ -1,0 +1,41 @@
+{
+  "run": 8,
+  "node": "mandelbrot",
+  "kernel": "gemm",
+  "N": 4096,
+  "device_iter": 1,
+  "dtype": "fp16",
+  "residency": "resident_buffers",
+  "warmup_calls": 10,
+  "warmup_s": 0.02,
+  "compile_time_s": 69.87,
+  "compile_in_timing": false,
+  "warmup_in_timing": false,
+  "seconds_requested": 300.0,
+  "total_time_s": 300.0015,
+  "calls": 158379,
+  "total_samples": 648720384,
+  "iterations_measured_on_device": 0.0,
+  "count_verified": false,
+  "throughput_samples_per_s": 2162390.1183,
+  "ms_per_sample": 0.000462,
+  "TFLOP_per_s": 72.55777,
+  "flops_per_sample": 33554432,
+  "samples_per_call": 4096,
+  "start_unix": 1787960855.801,
+  "end_unix": 1787961155.802,
+  "seed": 42,
+  "idle_w": 41.6,
+  "occupancy_before": {
+    "attached_process_lines": 1,
+    "no_attached_processes": false
+  },
+  "occupancy_after": {
+    "attached_process_lines": 0,
+    "no_attached_processes": true
+  },
+  "python": "3.9.16",
+  "torch": "1.13.1+cpu",
+  "poptorch": "3.2.0-bb50ce43ab",
+  "note_power": "sampled separately; join on start_unix/end_unix or phase"
+}

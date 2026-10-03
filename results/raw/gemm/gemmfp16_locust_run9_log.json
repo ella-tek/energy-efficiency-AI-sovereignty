@@ -1,0 +1,45 @@
+{
+  "run": 9,
+  "node": "locust",
+  "kernel": "gemm",
+  "N": 4096,
+  "residency": "device_resident",
+  "dtype": "fp16",
+  "gpu_name": "NVIDIA GH200 480GB",
+  "warmup_calls": 10,
+  "warmup_s": 0.12,
+  "compile_time_s": 0.0,
+  "compile_in_timing": false,
+  "warmup_in_timing": false,
+  "seconds_requested": 300.0,
+  "total_time_s": 300.0002,
+  "calls": 1087417,
+  "total_samples": 4454060032,
+  "calls_measured_on_device": 1087417.0,
+  "count_verified": true,
+  "throughput_samples_per_s": 14846855.2455,
+  "ms_per_sample": 6.7e-05,
+  "TFLOP_per_s": 498.17779,
+  "flops_per_sample": 33554432,
+  "samples_per_call": 4096,
+  "start_unix": 1787959084.838,
+  "end_unix": 1787959384.838,
+  "idle_w": 89.41,
+  "seed": 42,
+  "occupancy_before": {
+    "n_processes": 1,
+    "processes": [
+      "1454869, python3, 802 MiB"
+    ]
+  },
+  "occupancy_after": {
+    "n_processes": 1,
+    "processes": [
+      "1454869, python3, 802 MiB"
+    ]
+  },
+  "python": "3.9.18",
+  "torch": "2.5.1",
+  "cuda": "12.4",
+  "note_power": "sampled separately; join on start_unix/end_unix or phase"
+}
