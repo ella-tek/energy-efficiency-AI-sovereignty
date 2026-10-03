@@ -1,0 +1,7 @@
+kernel,precision,fastest_node,most_efficient_node,energy_saved_pct,throughput_lost_pct
+stencil,fp16,cricket,cricket,,
+stencil,fp32,locust,mandelbrot,69.94,28.44
+triad,fp16,locust,mandelbrot,84.42,42.23
+triad,fp32,locust,mandelbrot,87.63,15.24
+gemm,fp16,locust,locust,,
+gemm,fp32,locust,mandelbrot,45.58,21.26

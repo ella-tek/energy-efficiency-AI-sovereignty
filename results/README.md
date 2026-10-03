@@ -31,8 +31,15 @@ Produced by `analysis/extract_runs.py`. Mean power here is the average over the
 
 ## summary/
 
-One row per kernel, precision and node: mean and standard deviation over the 20
-runs in that cell.
+`results.csv` holds one row per kernel, precision and node: mean and standard
+deviation over the 20 runs in that cell.
+
+`allocation.csv` and `tradeoff.csv` are derived from it by
+`analysis/derive_comparison_metrics.py`. Allocation inefficiency is each node's
+energy per sample divided by the lowest for that workload, so 1.0 marks the most
+efficient node and the baseline differs between workloads. The trade-off gives
+the energy saved and the throughput given up by running on the most efficient
+node rather than the fastest, both relative to the fastest.
 
 ## How the numbers are derived
 
