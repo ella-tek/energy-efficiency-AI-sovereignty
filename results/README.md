@@ -17,8 +17,8 @@ covering only the measured region. Columns differ by platform: the GPU files
 carry `power_w` per `gpu_index`, the IPU files carry `chip_w` and `chassis_w`.
 Both start with `unix_time` and `elapsed_s`.
 
-Note the naming: the JSON always carries the precision, while the power CSV
-drops it for FP32. `analysis/extract_runs.py` handles this when pairing them.
+Every file follows the same pattern, so a timing record and its power trace
+differ only in the suffix.
 
 On a two-GPU node both GPUs are logged and the analysis uses the busier one,
 which also shows the idle sibling was not doing anything.

@@ -73,8 +73,9 @@ for kern in KERNELS:
                 j = json.load(open(jf))
                 if j.get("dtype") and j["dtype"] != dt:
                     continue
-                tag = kern if dt == "fp32" else f"{kern}{dt}"
-                pf = os.path.join(D, f"{tag}_{HOST}_run{run}_power.csv")
+                pf = os.path.join(D, f"{kern}{dt}_{HOST}_run{run}_power.csv")
+                if not os.path.exists(pf):   # older runs left fp32 out of the name
+                    pf = os.path.join(D, f"{kern}_{HOST}_run{run}_power.csv")
                 if not os.path.exists(pf):
                     continue
                 mw, dev, n = power_of(pf)

@@ -85,7 +85,6 @@ while [ $waited -lt $MAXWAIT ]; do
 done
 
 TAG="${KERN}${DT}"
-if [ "$DT" = fp32 ]; then TAG="$KERN"; fi
 PWRCSV="official/${TAG}_${HOST}_run${RUN}_power.csv"
 SESS="redo_${TAG}_r${RUN}"
 
